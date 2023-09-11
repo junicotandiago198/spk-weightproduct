@@ -1,7 +1,7 @@
 <ul class="navbar-nav sidebar accordion" id="accordionSidebar" style="background-color: #FEF9EF">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
                 <div class="sidebar-brand-icon">
                     <img class="img-fluid" src="{{ asset('img/perkemi.png') }}" style="width: 50px;">
                 </div>

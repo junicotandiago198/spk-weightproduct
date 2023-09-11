@@ -15,7 +15,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama Alternatif</th>
-                            <th>Kode Alternatif</th>
+                            {{-- <th>Kode Alternatif</th> --}}
                             @foreach ($kriteria as $krit )
                             <th>{{ $krit->kode }}</th>
                             @endforeach
@@ -29,7 +29,7 @@
                         <tr>
                             <td>{{ $i++ }}</td>
                             <td colspan="">{{ $alt->name }}</td>
-                            <td colspan="">{{ $alt->kode }}</td>
+                            {{-- <td colspan="">{{ $alt->kode }}</td> --}}
                             @php
                             $nilai = [];
 							foreach ($kriteria as $k) {

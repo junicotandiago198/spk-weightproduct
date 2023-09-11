@@ -26,6 +26,7 @@ class AlternatifController extends Controller
     {
         $request->validate([
             'name' => ['required'],
+            'kode' => ['required', 'unique:alternatifs']
         ]);
 
         $data = Alternatif::create([

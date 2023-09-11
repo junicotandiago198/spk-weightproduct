@@ -14,7 +14,10 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Kode ALternaitf</label>
-                    <input type="text" name="kode" id="" class="form-control" value="{{ old('kode') }}">
+                    <input type="text" name="kode" id="" class="form-control {{ $errors->has('kode') ? 'is-invalid' : '' }}" value="{{ old('kode') }}">
+                    @if ($errors->has ('kode'))
+                        <p class="text-danger">{{ $errors->first('kode') }}</p>
+                    @endif
                 </div>
                 <div class="form-group">
                     <label for="name">Nama Alternatif</label>
